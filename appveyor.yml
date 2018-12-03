@@ -1,0 +1,17 @@
+version: 3.0.{build}-beta
+branches:
+  only:
+  - master
+image: Visual Studio 2017
+before_build:
+- ps: dotnet restore
+build:
+  verbosity: minimal
+after_build:
+- ps: dotnet pack /p:Version=$env:APPVEYOR_BUILD_VERSION src\Elmah.Io.Blazor\Elmah.Io.Blazor.csproj --output artifacts
+artifacts:
+- path: '**\*.nupkg'
+deploy:
+- provider: NuGet
+  api_key:
+    secure: zW5wpse6lUxytGy97A4zTL4QmmIy0+Xws97OQsbxBYL69HUUnO73vlaGKd6A8Nzo
