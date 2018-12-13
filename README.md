@@ -2,7 +2,14 @@
 
 This is an experimental integration from Blazor to elmah.io. I wanted to see if I could get a WebAssembly-based application to log messages to elmah.io.
 
-To use `Elmah.Io.Blazor`, install the `Microsoft.Extensions.Logging` NuGet package and configure elmah.io:
+To use `Elmah.Io.Blazor`, install the following NuGet packages:
+
+```powershell
+Install-Package Microsoft.Extensions.Logging
+Install-Package Elmah.Io.Blazor -IncludePrerelease
+```
+
+Configure logging to elmah.io:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
