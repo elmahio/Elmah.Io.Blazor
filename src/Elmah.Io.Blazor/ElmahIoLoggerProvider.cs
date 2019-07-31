@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Blazor.Browser.Http;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using System;
 using System.Net.Http;
 
@@ -13,7 +12,7 @@ namespace Elmah.Io.Blazor
 
         public ElmahIoLoggerProvider(string apiKey, Guid logId)
         {
-            httpClient = new HttpClient(new BrowserHttpMessageHandler());
+            httpClient = new HttpClient();
             this.apiKey = apiKey;
             this.logId = logId;
         }

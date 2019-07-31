@@ -1,12 +1,10 @@
-﻿@using Elmah.Io.Blazor.AspNetCore.Shared
-@page "/fetchdata"
-@using Microsoft.Extensions.Logging
-@inject ILogger<Counter> logger
-@inject HttpClient Http
+﻿@page "/fetchdata"
+@using Elmah.Io.Blazor.Server.Data
+@inject WeatherForecastService ForecastService
 
 <h1>Weather forecast</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
+<p>This component demonstrates fetching data from a service.</p>
 
 @if (forecasts == null)
 {
@@ -37,18 +35,11 @@ else
     </table>
 }
 
-@functions {
+@code {
     WeatherForecast[] forecasts;
 
     protected override async Task OnInitAsync()
     {
-        try
-        {
-            forecasts = await Http.GetJsonAsync<WeatherForecast[]>("api/SampleData/WeatherForecasts-nonexisting");
-        }
-        catch (Exception e)
-        {
-            logger.LogError(e, e.Message);
-        }
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
     }
 }

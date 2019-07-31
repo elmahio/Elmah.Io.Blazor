@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.106
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{00522618-96C3-456F-BCB8-C7DE2DE0A86E}"
 EndProject
@@ -11,11 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elmah.Io.Blazor", "src\Elma
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{E2EF28F9-7438-4B6B-AEB5-EFFD627FC261}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elmah.Io.Blazor.AspNetCore.Client", "sample\Elmah.Io.Blazor.AspNetCore.Client\Elmah.Io.Blazor.AspNetCore.Client.csproj", "{B0C7C13A-9F3B-4428-8566-EAE6DC0B20C0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elmah.Io.Blazor.AspNetCore.Server", "sample\Elmah.Io.Blazor.AspNetCore.Server\Elmah.Io.Blazor.AspNetCore.Server.csproj", "{BF8AA1CD-7BE8-4C23-9A0D-87F479168360}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elmah.Io.Blazor.AspNetCore.Shared", "sample\Elmah.Io.Blazor.AspNetCore.Shared\Elmah.Io.Blazor.AspNetCore.Shared.csproj", "{18888A2C-0039-4846-92A0-55D7089594C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmah.Io.Blazor.Server", "sample\Elmah.Io.Blazor.Server\Elmah.Io.Blazor.Server.csproj", "{8E70B0F8-AC14-4DB2-9FDB-6C19500DD5C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,27 +23,17 @@ Global
 		{D83D0103-1B3D-4E88-8485-21BE3A9C85E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D83D0103-1B3D-4E88-8485-21BE3A9C85E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D83D0103-1B3D-4E88-8485-21BE3A9C85E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B0C7C13A-9F3B-4428-8566-EAE6DC0B20C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0C7C13A-9F3B-4428-8566-EAE6DC0B20C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0C7C13A-9F3B-4428-8566-EAE6DC0B20C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0C7C13A-9F3B-4428-8566-EAE6DC0B20C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF8AA1CD-7BE8-4C23-9A0D-87F479168360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF8AA1CD-7BE8-4C23-9A0D-87F479168360}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF8AA1CD-7BE8-4C23-9A0D-87F479168360}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF8AA1CD-7BE8-4C23-9A0D-87F479168360}.Release|Any CPU.Build.0 = Release|Any CPU
-		{18888A2C-0039-4846-92A0-55D7089594C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18888A2C-0039-4846-92A0-55D7089594C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18888A2C-0039-4846-92A0-55D7089594C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18888A2C-0039-4846-92A0-55D7089594C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E70B0F8-AC14-4DB2-9FDB-6C19500DD5C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E70B0F8-AC14-4DB2-9FDB-6C19500DD5C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E70B0F8-AC14-4DB2-9FDB-6C19500DD5C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E70B0F8-AC14-4DB2-9FDB-6C19500DD5C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D83D0103-1B3D-4E88-8485-21BE3A9C85E5} = {00522618-96C3-456F-BCB8-C7DE2DE0A86E}
-		{B0C7C13A-9F3B-4428-8566-EAE6DC0B20C0} = {E2EF28F9-7438-4B6B-AEB5-EFFD627FC261}
-		{BF8AA1CD-7BE8-4C23-9A0D-87F479168360} = {E2EF28F9-7438-4B6B-AEB5-EFFD627FC261}
-		{18888A2C-0039-4846-92A0-55D7089594C9} = {E2EF28F9-7438-4B6B-AEB5-EFFD627FC261}
+		{8E70B0F8-AC14-4DB2-9FDB-6C19500DD5C8} = {E2EF28F9-7438-4B6B-AEB5-EFFD627FC261}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B316A503-A3EF-4DC4-AC11-18C7037CAEA8}
