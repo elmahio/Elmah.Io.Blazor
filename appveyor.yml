@@ -4,6 +4,7 @@ branches:
   - master
 image: Visual Studio 2019 Preview
 before_build:
+- ps: dotnet --version
 - ps: dotnet restore
 build:
   verbosity: minimal
