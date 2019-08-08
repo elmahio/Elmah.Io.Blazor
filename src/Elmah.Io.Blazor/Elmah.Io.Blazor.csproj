@@ -1,7 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Description>An elmah.io provider for Blazor</Description>
+    <Authors>elmah.io</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Elmah.Io.Blazor</AssemblyName>
+    <PackageId>Elmah.Io.Blazor</PackageId>
+    <PackageTags>Error;Exception;Reporting;Management;Logging;ELMAH;Diagnostics;Tracing</PackageTags>
+    <PackageIconUrl>https://secure.gravatar.com/avatar/5c4cb3646528821117abde6d2d5ee22d?s=64</PackageIconUrl>
+    <PackageProjectUrl>https://elmah.io</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/elmahio/Elmah.Io.Blazor</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <!--Will be replaced on AppVeyor to build number-->
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
