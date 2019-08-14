@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elmah.Io.Blazor", "src\Elma
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{E2EF28F9-7438-4B6B-AEB5-EFFD627FC261}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elmah.Io.Blazor.Server", "sample\Elmah.Io.Blazor.Server\Elmah.Io.Blazor.Server.csproj", "{8E70B0F8-AC14-4DB2-9FDB-6C19500DD5C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elmah.Io.Blazor.Server", "sample\Elmah.Io.Blazor.Server\Elmah.Io.Blazor.Server.csproj", "{8E70B0F8-AC14-4DB2-9FDB-6C19500DD5C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62049ED1-A8BE-4C80-8FE7-4DF5B2B43859}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		global.json = global.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
