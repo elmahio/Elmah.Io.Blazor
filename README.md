@@ -1,5 +1,7 @@
 # Elmah.Io.Blazor
 
+> This repository has been moved to https://github.com/elmahio/Elmah.Io.Blazor.Wasm
+
 This is an experimental integration from Blazor to elmah.io. I wanted to see if I could get a WebAssembly-based application to log messages to elmah.io.
 
 To start logging to elmah.io from Blazor, install the [Elmah.Io.Blazor](https://www.nuget.org/packages/Elmah.Io.Blazor/) NuGet package:
